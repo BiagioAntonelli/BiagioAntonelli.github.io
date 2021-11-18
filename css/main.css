@@ -12,18 +12,12 @@ body {
     margin-bottom: 100px; 
 }
 
-nav ul, footer ul {
+footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-
-/* nav ul li {
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 footer ul li {
     display: inline;
@@ -49,6 +43,11 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+}
+
+header {
+    border-bottom: 1px solid #d5d5d5;
+    font-size: .10em;
 }
 
 ul.posts { 
