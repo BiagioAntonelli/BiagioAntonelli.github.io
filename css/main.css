@@ -3,15 +3,14 @@ body {
     width: 70%;
 }
 
-.blurb img {
-    align: left;
+#title img {
     display: block;
     margin: 0 auto;
     width: 12em;
     height: 12em;
     border-radius: 2em;
     margin-bottom: 100px; 
-  }
+}
 
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
