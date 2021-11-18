@@ -2,6 +2,50 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+.container .container-item {
+    width: 400px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+.container .container-item img {
+    border-radius: 1em;
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+}
+
+.container .container-item p {
+    font-size: 1.1em;
+    /* font-weight: bold; */
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin-bottom: 0.25em;
+    color: #646263;
+  }
+  
+.container .container-item:hover {
+    cursor: pointer;
+  }
+  
+.container .container-item:hover img {
+    opacity: 1.0;
+    transform: scale(1.1);
+  }
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
