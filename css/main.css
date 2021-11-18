@@ -3,7 +3,7 @@ body {
     width: 70%;
 }
 
-#title img {
+.blurb img {
     align: left;
     display: block;
     margin: 0 auto;
