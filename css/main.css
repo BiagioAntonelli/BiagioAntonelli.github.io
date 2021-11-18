@@ -4,12 +4,13 @@ body {
 }
 
 #title img {
+    align: left;
     display: block;
     margin: 0 auto;
     width: 12em;
     height: 12em;
     border-radius: 2em;
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
   }
 
 nav ul, footer ul {
