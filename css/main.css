@@ -9,6 +9,7 @@ body {
     width: 12em;
     height: 12em;
     border-radius: 2em;
+    margin-top: 30px; 
     margin-bottom: 30px; 
 }
 
@@ -46,8 +47,8 @@ footer {
 }
 
 header {
+    font-size: .8em;
     border-bottom: 1px solid #d5d5d5;
-    margin-bottom: 30px; 
 }
 
 ul.posts { 
