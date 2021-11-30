@@ -1,2 +1,5 @@
 _site/
 *.pdf
+Gemfile*
+.DS_Store
+.jekyll-cache/
