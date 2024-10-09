@@ -4,39 +4,89 @@ title: About me
 ---
 
 <div class="about">
-	<h1>Projects</h1>
+	<h1><span class="terminal-prompt">$</span> cat projects.txt</h1>
 
 	<div class="container">
-		<div class="container-item" style="width: 18rem;" >
-			<h3 class="card-title">Leveraging Large Language Models to Build a Low-Resource Customer Support Chatbot in a Three-Sided Marketplace</h3>
-			<img src="globot.png"Card image cap">
-			<p class="card-text">Accepted in KDD 2024 Workshop on Two-sided Marketplace Optimization: Search, Pricing, Matching & Growth.</p>
-			<p></p>
-			<a href="https://easychair.org/publications/preprint/nbQw"><i class="fas fa-link"> Research Paper </i></a>
-			<p class="card-text"><small class="text-muted">Glovo</small></p>
+		<div class="terminal-window">
+			<div class="terminal-header">
+				<span class="terminal-button"></span>
+				<span class="terminal-button"></span>
+				<span class="terminal-button"></span>
+			</div>
+			<div class="terminal-content">
+				<div class="project-container">
+					<div class="project-image-wrapper">
+						<img src="globot.png" alt="LLM Chatbot" class="project-image">
+						<img src="globot.png" alt="LLM Chatbot" class="project-image-full">
+					</div>
+					<div class="project-content">
+						<p class="terminal-text"><span class="terminal-prompt">$</span> ./run_project.sh llm_chatbot</p>
+						<h3 class="card-title">Leveraging LLMs for Customer Support Chatbot</h3>
+						<p class="card-text">Accepted in KDD 2024 Workshop on Two-sided Marketplace Optimization</p>
+						<a href="https://easychair.org/publications/preprint/nbQw" class="terminal-link"><i class="fas fa-file-code"></i> cat research_paper.pdf</a>
+						<p class="card-text"><small class="text-muted">@Glovo</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		  </div>
-		<div class="container-item" style="width: 18rem;" >
-			<h3 class="card-title">Deep Bayesian Multi Armed Bandits</h3>
-			<img src="https://blogs.mathworks.com/images/loren/2016/multiarmedbandit.jpg"Card image cap">
-			<p class="card-text">Deep Bayesian Bandits models and Thompson Sampling Exploration for online advertising applications. Developed a framework in PyTorch where several Bayesian Machine Learning algorithms were tested for improving the expected revenue from clicks received.</p>
-			<p></p>
-			<a href="mscproject.pdf"><i class="fas fa-link"> Thesis Project file </i></a>
-			<p class="card-text"><small class="text-muted">Amazon Development Center</small></p>
+		<div class="terminal-window">
+			<div class="terminal-header">
+				<span class="terminal-button"></span>
+				<span class="terminal-button"></span>
+				<span class="terminal-button"></span>
+			</div>
+			<div class="terminal-content">
+				<div class="project-container">
+					<div class="project-image-wrapper">
+						<img src="https://blogs.mathworks.com/images/loren/2016/multiarmedbandit.jpg" alt="Multi-Armed Bandits" class="project-image">
+						<img src="https://blogs.mathworks.com/images/loren/2016/multiarmedbandit.jpg" alt="Multi-Armed Bandits" class="project-image-full">
+					</div>
+					<div class="project-content">
+						<p class="terminal-text"><span class="terminal-prompt">$</span> python3 deep_bayesian_bandits.py</p>
+						<h3 class="card-title">Deep Bayesian Multi-Armed Bandits</h3>
+						<p class="card-text">PyTorch framework for Bayesian ML algorithms in online advertising</p>
+						<a href="mscproject.pdf" class="terminal-link"><i class="fas fa-file-pdf"></i> less thesis_project.pdf</a>
+						<p class="card-text"><small class="text-muted">@AmazonDevelopmentCenter</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		  </div>
-		  <div class="container-item" style="width: 18rem;">
-			<h3 class="card-title">GANs for painting generation</h3>
-			<img src="mlp_cw4_diagram.png"Card image cap">
-			<p class="card-text">Generative Adversarial Networks for painting generation. 
-				Accepted in ICMV 2019 (International Conference on Machine Vision).</p>
-			<p></p>
-			<a href="https://arxiv.org/pdf/1903.06259.pdf"><i class="fas fa-link"> Research Paper </i></a>
-
-			<p class="card-text"><small class="text-muted">University of Edinburgh</small></p>
-		  </div>
+		<div class="terminal-window">
+			<div class="terminal-header">
+				<span class="terminal-button"></span>
+				<span class="terminal-button"></span>
+				<span class="terminal-button"></span>
+			</div>
+			<div class="terminal-content">
+				<div class="project-container">
+					<div class="project-image-wrapper">
+						<img src="mlp_cw4_diagram.png" alt="GAN Architecture" class="project-image">
+						<img src="mlp_cw4_diagram.png" alt="GAN Architecture" class="project-image-full">
+					</div>
+					<div class="project-content">
+						<p class="terminal-text"><span class="terminal-prompt">$</span> npm run generate-art</p>
+						<h3 class="card-title">GANs for Painting Generation</h3>
+						<p class="card-text">Accepted in ICMV 2019 (International Conference on Machine Vision)</p>
+						<a href="https://arxiv.org/pdf/1903.06259.pdf" class="terminal-link"><i class="fas fa-file-alt"></i> vim research_paper.tex</a>
+						<p class="card-text"><small class="text-muted">@UniversityOfEdinburgh</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-        
-
 </div>
+
+<script>
+    // Add some nerdy terminal-like animations
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const terminalTexts = document.querySelectorAll('.terminal-text');
+        terminalTexts.forEach((text, index) => {
+            setTimeout(() => {
+                text.style.opacity = 1;
+            }, index * 500);
+        });
+    });
+</script>
 

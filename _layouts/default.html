@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/x-icon" href="https://images.unsplash.com/photo-1618331833071-ce81bd50d300?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    
-    
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-  </head>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">Projects</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>
+    </nav>
 
-  <body>
-    
-    <header>
-      <p align="center"><a href="/">Home</a> &nbsp; <a href="/about">About</a> </p>
-    </header>
-    
-<div class="container">
+    <div class="container">
+        {{ content }}
+    </div>
 
-  {{ content }}
-
-</div>
-  
-  <footer>
-   <ul>
-   <p align="center"><a href="mailto:antonelli.bi@gmail.com"><i class="fas fa-envelope"></i></a> &nbsp
-   <a href="https://github.com/biagioantonelli"><i class="fab fa-github"></i></a> &nbsp
-   <a href="https://www.linkedin.com/in/biagio-antonelli/"><i class="fab fa-linkedin-in"></i></a></p>
-   </ul>
-  </footer>
-  </body>
-
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/BiagioAntonelli" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/biagio-antonelli" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/AntonelliBiagio" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <!-- Add more social media links as needed -->
+        </div>
+    </footer>
+</body>
 </html>
