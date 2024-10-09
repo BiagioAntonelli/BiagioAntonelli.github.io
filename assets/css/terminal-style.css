@@ -185,3 +185,73 @@ img {
 .terminal-content .project-container {
     padding: 0;
 }
+
+/* Add these styles at the end of the file */
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .terminal-window {
+        padding: 5px;
+    }
+
+    .terminal-content {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .project-image-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-content {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .card-text {
+        font-size: 0.9em;
+    }
+}
+
+/* ... (keep other existing styles) ... */
