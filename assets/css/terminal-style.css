@@ -255,3 +255,18 @@ footer {
 }
 
 /* ... (keep other existing styles) ... */
+
+/* Add this new rule */
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* For larger screens, limit the maximum width */
+@media (min-width: 768px) {
+    .post-content img {
+        max-width: 600px; /* You can adjust this value as needed */
+    }
+}
