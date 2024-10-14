@@ -1,3 +1,6 @@
 name: Biagio Antonelli
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+include:
+  - favicon.ico
+
