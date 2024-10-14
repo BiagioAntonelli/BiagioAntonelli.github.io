@@ -47,6 +47,13 @@ nav ul li a:hover {
     background-color: var(--bg-color);
 }
 
+nav ul li.active a {
+    /* Style for the active navigation item */
+    font-weight: bold;
+    color: #0abe7c; /* Replace with your preferred color */
+    /* You can add more styles like background-color, border-bottom, etc. */
+}
+
 footer {
     margin-top: 40px;
     text-align: center;
