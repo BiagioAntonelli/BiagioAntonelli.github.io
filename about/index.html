@@ -1,99 +1,111 @@
 ---
 layout: default
-title: About me
+title: Projects
 ---
 
-<div class="about">
-	<h1><span class="terminal-prompt">$</span> cat projects.txt</h1>
+<div class="projects-page">
+	<div class="page-header">
+		<h1>Projects</h1>
+		<p class="subtitle">A collection of my work in AI and Machine Learning</p>
+	</div>
 
-	<div class="container">
-		<div class="terminal-window">
-			<div class="terminal-header">
-				<span class="terminal-button"></span>
-				<span class="terminal-button"></span>
-				<span class="terminal-button"></span>
+	<div class="projects-grid">
+		<!-- LLM Chatbot Project -->
+		<div class="project-card">
+			<div class="project-thumbnail">
+				<img src="globot.png" alt="LLM Chatbot">
 			</div>
-			<div class="terminal-content">
-				<div class="project-container">
-					<div class="project-image-wrapper">
-						<img src="globot.png" alt="LLM Chatbot" class="project-image">
-						<img src="globot.png" alt="LLM Chatbot" class="project-image-full">
-					</div>
-					<div class="project-content">
-						<p class="terminal-text"><span class="terminal-prompt">$</span> ./run_project.sh llm_chatbot</p>
-						<h3 class="card-title">Leveraging LLMs for Customer Support Chatbot</h3>
-						<p class="card-text">Accepted in KDD 2024 Workshop on Two-sided Marketplace Optimization</p>
-						<a href="https://easychair.org/publications/preprint/nbQw" class="terminal-link"><i class="fas fa-file-code"></i> cat research_paper.pdf</a>
-						<p class="card-text"><small class="text-muted">@Glovo</small></p>
-					</div>
+			<div class="project-info">
+				<h2>LLM-powered Customer Support</h2>
+				<p class="project-description">
+					Leveraging Large Language Models for automated customer support in food delivery.
+					Accepted in KDD 2024 Workshop on Two-sided Marketplace Optimization.
+				</p>
+				<div class="project-tags">
+					<span class="tag">LLMs</span>
+					<span class="tag">NLP</span>
+					<span class="tag">Customer Support</span>
+				</div>
+				<div class="project-links">
+					<a href="https://easychair.org/publications/preprint/nbQw" class="project-link">
+						<i class="fas fa-file-alt"></i> Read Paper
+					</a>
+					<span class="project-company">@Glovo</span>
 				</div>
 			</div>
 		</div>
 
-		<div class="terminal-window">
-			<div class="terminal-header">
-				<span class="terminal-button"></span>
-				<span class="terminal-button"></span>
-				<span class="terminal-button"></span>
+		<!-- Nafoto AI Project -->
+		<div class="project-card">
+			<div class="project-thumbnail">
+				<img src="app-preview.png" alt="Nafoto AI App">
 			</div>
-			<div class="terminal-content">
-				<div class="project-container">
-					<div class="project-image-wrapper">
-						<img src="app-preview.png" alt="Nafoto AI App Preview" class="project-image">
-						<img src="app-preview.png" alt="Nafoto AI App Preview" class="project-image-full">
-					</div>
-					<div class="project-content">
-						<p class="terminal-text"><span class="terminal-prompt">$</span> ./run_ai_photography.sh</p>
-						<h3 class="card-title">Nafoto AI: AI-Powered Professional Photography</h3>
-						<p class="card-text">Transform images with latest Image Generation models for headshots, personal AI characters, and product photography.</p>
-						<a href="https://replace-me.com/" class="terminal-link"><i class="fas fa-globe"></i> open https://replace-me.com/</a>
-						<p class="card-text"><small class="text-muted">@PersonalProject</small></p>
-					</div>
+			<div class="project-info">
+				<h2>Nafoto AI</h2>
+				<p class="project-description">
+					AI-Powered Professional Photography platform using latest Image Generation models 
+					for headshots, personal AI characters, and product photography.
+				</p>
+				<div class="project-tags">
+					<span class="tag">Generative AI</span>
+					<span class="tag">Computer Vision</span>
+					<span class="tag">Web App</span>
 				</div>
-			</div>
-		</div>
-		<div class="terminal-window">
-			<div class="terminal-header">
-				<span class="terminal-button"></span>
-				<span class="terminal-button"></span>
-				<span class="terminal-button"></span>
-			</div>
-			<div class="terminal-content">
-				<div class="project-container">
-					<div class="project-image-wrapper">
-						<img src="https://blogs.mathworks.com/images/loren/2016/multiarmedbandit.jpg" alt="Multi-Armed Bandits" class="project-image">
-						<img src="https://blogs.mathworks.com/images/loren/2016/multiarmedbandit.jpg" alt="Multi-Armed Bandits" class="project-image-full">
-					</div>
-					<div class="project-content">
-						<p class="terminal-text"><span class="terminal-prompt">$</span> python3 deep_bayesian_bandits.py</p>
-						<h3 class="card-title">Deep Bayesian Multi-Armed Bandits</h3>
-						<p class="card-text">PyTorch framework for Bayesian ML algorithms in online advertising</p>
-						<a href="mscproject.pdf" class="terminal-link"><i class="fas fa-file-pdf"></i> less thesis_project.pdf</a>
-						<p class="card-text"><small class="text-muted">@AmazonDevelopmentCenter</small></p>
-					</div>
+				<div class="project-links">
+					<a href="https://replace-me.com/" class="project-link">
+						<i class="fas fa-external-link-alt"></i> View Project
+					</a>
+					<span class="project-company">@PersonalProject</span>
 				</div>
 			</div>
 		</div>
 
-		<div class="terminal-window">
-			<div class="terminal-header">
-				<span class="terminal-button"></span>
-				<span class="terminal-button"></span>
-				<span class="terminal-button"></span>
+		<!-- Deep Bayesian Bandits Project -->
+		<div class="project-card">
+			<div class="project-thumbnail">
+				<img src="https://blogs.mathworks.com/images/loren/2016/multiarmedbandit.jpg" alt="Multi-Armed Bandits">
 			</div>
-			<div class="terminal-content">
-				<div class="project-container">
-					<div class="project-image-wrapper">
-						<img src="mlp_cw4_diagram.png" alt="GAN Architecture" class="project-image">
-						<img src="mlp_cw4_diagram.png" alt="GAN Architecture" class="project-image-full">
-					</div>
-					<div class="project-content">
-						<p class="terminal-text"><span class="terminal-prompt">$</span> npm run generate-art</p>
-						<h3 class="card-title">GANs for Painting Generation</h3>
-						<p class="card-text">Accepted in ICMV 2019 (International Conference on Machine Vision)</p>
-						<a href="https://arxiv.org/pdf/1903.06259.pdf" class="terminal-link"><i class="fas fa-file-alt"></i> vim research_paper.tex</a>
-						<p class="card-text"><small class="text-muted">@UniversityOfEdinburgh</small></p>
-					</div>
+			<div class="project-info">
+				<h2>Deep Bayesian Multi-Armed Bandits</h2>
+				<p class="project-description">
+					PyTorch framework for Bayesian ML algorithms in online advertising, 
+					focusing on exploration-exploitation trade-offs.
+				</p>
+				<div class="project-tags">
+					<span class="tag">Deep Learning</span>
+					<span class="tag">Bayesian ML</span>
+					<span class="tag">PyTorch</span>
+				</div>
+				<div class="project-links">
+					<a href="mscproject.pdf" class="project-link">
+						<i class="fas fa-file-pdf"></i> Read Thesis
+					</a>
+					<span class="project-company">@AmazonDevelopmentCenter</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- GANs Project -->
+		<div class="project-card">
+			<div class="project-thumbnail">
+				<img src="mlp_cw4_diagram.png" alt="GAN Architecture">
+			</div>
+			<div class="project-info">
+				<h2>GANs for Painting Generation</h2>
+				<p class="project-description">
+					Research on Generative Adversarial Networks for artistic image synthesis.
+					Accepted in ICMV 2019 (International Conference on Machine Vision).
+				</p>
+				<div class="project-tags">
+					<span class="tag">GANs</span>
+					<span class="tag">Deep Learning</span>
+					<span class="tag">Computer Vision</span>
+				</div>
+				<div class="project-links">
+					<a href="https://arxiv.org/pdf/1903.06259.pdf" class="project-link">
+						<i class="fas fa-file-alt"></i> Read Paper
+					</a>
+					<span class="project-company">@UniversityOfEdinburgh</span>
 				</div>
 			</div>
 		</div>
@@ -101,14 +113,14 @@ title: About me
 </div>
 
 <script>
-    // Add some nerdy terminal-like animations
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const terminalTexts = document.querySelectorAll('.terminal-text');
-        terminalTexts.forEach((text, index) => {
-            setTimeout(() => {
-                text.style.opacity = 1;
-            }, index * 500);
-        });
-    });
+	// Add some nerdy terminal-like animations
+	document.addEventListener('DOMContentLoaded', (event) => {
+		const terminalTexts = document.querySelectorAll('.terminal-text');
+		terminalTexts.forEach((text, index) => {
+			setTimeout(() => {
+				text.style.opacity = 1;
+			}, index * 500);
+		});
+	});
 </script>
 

@@ -7,30 +7,41 @@
     <!-- Add the following line to include the favicon -->
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <ul>
-                <li class="{% if page.url == '/' %}active{% endif %}"><a href="/">Home</a></li>
-                <li class="{% if page.url == '/about/' %}active{% endif %}"><a href="/about">Projects</a></li>
-                <li class="{% if page.url contains '/blog' %}active{% endif %}"><a href="/blog">Blog</a></li>
-            </ul>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li class="{% if page.url == '/' %}active{% endif %}"><a href="/">Home</a></li>
+                    <li class="{% if page.url == '/about/' %}active{% endif %}"><a href="/about">Projects</a></li>
+                    <li class="{% if page.url contains '/blog' %}active{% endif %}"><a href="/blog">Blog</a></li>
+                    <!-- <li><a href="/cv">CV</a></li> -->
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <div class="container">
+    <main class="wrapper">
         {{ content }}
-    </div>
+    </main>
 
     <footer>
-        <div class="social-links">
-            <a href="https://github.com/BiagioAntonelli" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/biagio-antonelli" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/AntonelliBiagio" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-            <!-- Add more social media links as needed -->
+        <div class="wrapper">
+            <div class="social-links">
+                <a href="https://github.com/BiagioAntonelli" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/biagio-antonelli" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/AntonelliBiagio" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
         </div>
     </footer>
 </body>
