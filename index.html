@@ -3,42 +3,51 @@ layout: default
 title: Biagio Antonelli
 ---
 
-<div class="terminal-window">
-    <div class="terminal-header">
-        <span class="terminal-button"></span>
-        <span class="terminal-button"></span>
-        <span class="terminal-button"></span>
-    </div>
-    <div class="terminal-content">
-        <p class="terminal-text"><span class="terminal-prompt">$</span> cat welcome.txt</p>
-        <h1>Welcome to Biagio Antonelli's Personal Website</h1>
-        
+<div class="home-container">
+    <div class="hero-section">
         <div class="profile-container">
-            <img src="/me.jpeg" alt="Biagio Antonelli" class="profile-image">
-            <div class="profile-text">
-                <p class="terminal-text"><span class="terminal-prompt">$</span> whoami</p>
-                <p>I'm a Machine Learning Engineer passionate about AI and its applications.</p>
-                <p class="terminal-text"><span class="terminal-prompt">$</span> cat education.txt</p>
-                <p>👨‍🎓 Studied Artificial Intelligence at The University of Edinburgh</p>
-                <p class="terminal-text"><span class="terminal-prompt">$</span> cat current_focus.txt</p>
-                <ul>
-                    <li>🔭 Working on optimising Food Delivery experiences with ML and AI at @glovo</li>
-                    <li>🌱 Passionate about Deep Learning and Generative AI applications</li>
-                    <li>🖼️ Experimenting with Diffusion Models (check my <a href="https://replace-me.com/">app</a>)</li>
-                    <li>🤖 Exploring RAG and Agentic Patterns with LLMs 📖</li>
-                </ul>
-                <p class="terminal-text"><span class="terminal-prompt">$</span> ls skills/</p>
-                <ul>
-                    <li>Machine Learning</li>
-                    <li>Deep Learning</li>
-                    <li>Natural Language Processing</li>
-                    <li>Computer Vision</li>
-                    <li>Deploying ML Models</li>
-                </ul>
+            <img src="/output_image_63.jpg" alt="Biagio Antonelli" class="profile-image">
+            <div class="profile-content">
+                <h1>Welcome to Biagio Antonelli's Personal Website</h1>
+                <p class="lead">Machine Learning Engineer passionate about AI and its applications.</p>
             </div>
         </div>
-        
-        <p class="terminal-text"><span class="terminal-prompt">$</span> echo "Feel free to explore my projects and blog posts!"</p>
+    </div>
+
+    <div class="about-section">
+        <div class="info-card">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <p>👨‍🎓 Studied Artificial Intelligence at The University of Edinburgh</p>
+        </div>
+
+        <div class="info-card">
+            <h2><i class="fas fa-laptop-code"></i> Current Focus</h2>
+            <ul class="feature-list">
+                <li>🔭 Working on optimising Food Delivery experiences with ML and AI at @glovo</li>
+                <li>🌱 Passionate about Deep Learning and Generative AI applications</li>
+                <li>🖼️ Experimenting with Diffusion Models (<a href="https://replace-me.com/">app</a>)</li>
+                <li>🤖 Exploring RAG and Agentic Patterns with LLMs 📖</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h2><i class="fas fa-tools"></i> Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Natural Language Processing</span>
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">Deploying ML Models</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <p class="cta-text">Feel free to explore my projects and blog posts!</p>
+        <div class="cta-buttons">
+            <a href="/about" class="cta-button">View Projects</a>
+            <a href="/blog" class="cta-button secondary">Read Blog</a>
+        </div>
     </div>
 </div>
 

@@ -3,21 +3,22 @@ layout: default
 title: Blog
 ---
 
-<div class="terminal-window">
-    <div class="terminal-header">
-        <span class="terminal-button"></span>
-        <span class="terminal-button"></span>
-        <span class="terminal-button"></span>
-    </div>
-    <div class="terminal-content">
-        <p class="terminal-text"><span class="terminal-prompt">$</span> ls -l blog_posts/</p>
-        <ul class="posts">
-            {% for post in site.posts %}
-            <li class="post-item">
-                <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-                <a href="{{ post.url }}" class="post-link" title="{{ post.title }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
+<div class="blog-container">
+    <h1>Blog Posts</h1>
+    
+    <div class="posts-list">
+        {% for post in site.posts %}
+        <div class="post-item">
+            <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+            {% if post.categories %}
+            <div class="post-categories">
+                {% for category in post.categories %}
+                <span class="category">{{ category }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
     </div>
 </div>
