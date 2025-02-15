@@ -371,28 +371,29 @@ nav ul li.active a {
 
 /* Home page styles */
 .home-container {
-    max-width: 800px;
+    max-width: 650px;
     margin: 80px auto 0;
     padding: 0 20px;
 }
 
 .hero-section {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .profile-container {
     margin: 0 auto;
+    text-align: center;
 }
 
 .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1.5rem;
     display: block;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 
@@ -400,105 +401,98 @@ nav ul li.active a {
     transform: scale(1.05);
 }
 
-.profile-content {
-    margin-bottom: 2rem;
-}
-
-.profile-content h1 {
+.profile-container h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
-    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
 }
 
 .lead {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #666;
-    margin-bottom: 2rem;
+    margin: 0;
 }
 
 .content-section {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
-    padding: 0 1rem;
+    text-align: center;
 }
 
-.content-section p {
-    font-size: 1.1rem;
+.bio-list {
+    margin: 1.5rem auto;
+    display: inline-block;
+    text-align: left;
+}
+
+.bio-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.bio-item:last-child {
+    margin-bottom: 0;
+}
+
+.bio-item span {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    width: 1.5rem;
+    text-align: center;
+}
+
+.bio-item p {
+    margin: 0;
+    font-size: 1rem;
     color: #333;
-    margin-bottom: 1rem;
-}
-
-.feature-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 2rem 0;
-}
-
-.feature-list li {
-    margin-bottom: 0.8rem;
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .skills {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
+    justify-content: center;
 }
 
 .skill-tag {
-    background: #f0f0f0;
+    background: #f5f5f5;
     color: #444;
-    padding: 0.4rem 0.8rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.9rem;
     transition: all 0.2s ease;
+    white-space: nowrap;
 }
 
 .skill-tag:hover {
-    background: #007bff;
-    color: white;
-    transform: translateY(-2px);
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin: 2rem 0;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: all 0.2s ease;
-    text-decoration: none;
-}
-
-.cta-button:not(.secondary) {
-    background: #007bff;
-    color: white;
-}
-
-.cta-button.secondary {
-    background: #f0f0f0;
-    color: #444;
-}
-
-.cta-button:hover {
-    transform: translateY(-2px);
-}
-
-.cta-button:not(.secondary):hover {
-    background: #0056b3;
-}
-
-.cta-button.secondary:hover {
     background: #e0e0e0;
+    transform: translateY(-1px);
+}
+
+.action-links {
+    text-align: center;
+    margin: 2.5rem 0;
+    font-size: 1.1rem;
+}
+
+.action-links a {
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.3rem 0;
+}
+
+.action-links a:hover {
+    color: #007bff;
+}
+
+.separator {
+    margin: 0 1rem;
+    color: #ccc;
 }
 
 @media (max-width: 768px) {
@@ -508,24 +502,54 @@ nav ul li.active a {
     }
 
     .profile-image {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
 
-    .profile-content h1 {
-        font-size: 1.6rem;
+    .profile-container h1 {
+        font-size: 1.8rem;
     }
 
     .lead {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .content-section {
-        padding: 0;
+        max-width: 100%;
+        padding: 0 10px;
     }
 
-    .feature-list li {
+    .bio-list {
+        margin: 2rem auto;
+        width: fit-content;
+    }
+
+    .bio-item {
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .bio-item span {
+        width: 1.2rem;
+    }
+
+    .bio-item p {
+        font-size: 0.95rem;
+    }
+
+    .skills {
+        gap: 0.4rem;
+        margin: 2rem 0;
+    }
+
+    .skill-tag {
+        font-size: 0.85rem;
+        padding: 0.25rem 0.7rem;
+    }
+
+    .action-links {
         font-size: 1rem;
+        margin: 2rem 0;
     }
 }
 
@@ -872,7 +896,7 @@ nav ul li.active a {
         height: 140px;
     }
 
-    .profile-content h1 {
+    .profile-container h1 {
         font-size: 1.8rem;
     }
 
