@@ -4,25 +4,21 @@ title: Blog
 ---
 
 <div class="blog-container">
-    <div class="blog-header">
-        <h1>Blog Posts</h1>
-        <p class="lead">Thoughts and insights about AI, Machine Learning, and Technology</p>
-    </div>
-
+    <h1>Blog Posts</h1>
+    
     <div class="posts-list">
         {% for post in site.posts %}
-        <article class="post-card">
-            <div class="post-meta">
-                <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <div class="post-item">
+            <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+            {% if post.categories %}
+            <div class="post-categories">
+                {% for category in post.categories %}
+                <span class="category">{{ category }}</span>
+                {% endfor %}
             </div>
-            <h2 class="post-title">
-                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            </h2>
-            {% if post.description %}
-            <p class="post-excerpt">{{ post.description }}</p>
             {% endif %}
-            <a href="{{ post.url }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-        </article>
+        </div>
         {% endfor %}
     </div>
 </div>
