@@ -89,9 +89,11 @@ async def create_video(
     # ... rest of the code ...
 ```
 
-### Future Improvements
+### Reflections and Future Improvements
 
-An interesting next step would be to automatically generate image prompts based on song lyrics. This could create a more cohesive narrative in the music videos. The process would look something like this:
+It's crazy how easily is becoming to create cool things with AI, and without even needing ML skills, just basic programming skills.
+
+Regarding the experiment, an interesting next step would be to automatically generate image prompts based on song lyrics. This could create a more cohesive narrative in the music videos. The process would look something like this:
 
 1. Split lyrics into time-based chunks
 2. For each chunk, generate:
