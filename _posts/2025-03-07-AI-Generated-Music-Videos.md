@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creating AI-Generated Music Videos: A Fun Experiment"
-date: 2024-02-15
+date: 2025-02-15
 categories: [AI, Projects]
 ---
 
