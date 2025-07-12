@@ -1,4 +1,6 @@
 name: Biagio Antonelli
+title: Biagio Antonelli
+repository: BiagioAntonelli/BiagioAntonelli.github.io
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 future: false
